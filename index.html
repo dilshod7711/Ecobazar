@@ -3,30 +3,1316 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Store Header</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        src: url("./Poppins/Poppins-Regular.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="flex justify-between items-center">
-        <div>
-          <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+    <header class="">
+      <div class="border-b border-[#e5e5e5]">
+        <div
+          class="max-w-[1200px] mx-auto flex justify-between items-center py-2"
+        >
+          <div>
+            <p class="text-[12px] text-[#666666] font-Poppins">
+              📍 Store Location: Lincoln-344, Illinois, Chicago, USA
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <select
+              id="lang"
+              name="lang"
+              class="text-[#666666] text-[12px] font-Poppins"
+            >
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="en"
+                selected
+              >
+                English (ENG)
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="uz"
+              >
+                O‘zbekcha (UZB)
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="ru"
+              >
+                Русский (RUS)
+              </option>
+            </select>
+            <select
+              id="currency"
+              name="currency"
+              class="text-[#666666] text-[12px] font-Poppins"
+            >
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="usd"
+                selected
+              >
+                USD – Dollar
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="eur"
+              >
+                EUR – Euro
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="uzs"
+              >
+                UZS – So‘m
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="rub"
+              >
+                RUB – Rubl
+              </option>
+            </select>
+            <p class="text-[#666666] text-[12px] font-Poppins">|</p>
+            <div class="flex gap-2">
+              <button
+                class="text-[#666666] text-[12px] font-Poppins cursor-pointer"
+              >
+                Sign In
+              </button>
+              <p class="text-[#666666] text-[12px] font-Poppins">/</p>
+              <button
+                class="text-[#666666] text-[12px] font-Poppins cursor-pointer"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="max-w-[1200px] mx-auto justify-between flex mt-[20px]">
         <div>
-          <select id="lang" name="lang">
-            <option value="en" selected>English (ENG)</option>
-            <option value="uz">O‘zbekcha (UZB)</option>
-            <option value="ru">Русский (RUS)</option>
-          </select>
-          <select id="currency" name="currency">
-            <option value="usd" selected>USD – Dollar</option>
-            <option value="eur">EUR – Euro</option>
-            <option value="uzs">UZS – So‘m</option>
-            <option value="rub">RUB – Rubl</option>
-          </select>
+          <img src="./imgs/Logo (2).svg" alt="" />
+        </div>
+        <div class="flex">
+          <input
+            class="w-[300px] h-[40px] border border-[#e5e5e5] px-3 rounded-l-[5px] text-[#808080] text-[15px] font-poppins focus:outline-none focus:ring-2 focus:ring-[#00B207]/50"
+            type="text"
+            placeholder="🔍 Search"
+          />
+          <button
+            class="w-[100px] h-[40px] bg-[#00B207] text-white text-[15px] font-poppins rounded-r-[5px] hover:bg-green-600 transition"
+          >
+            Search
+          </button>
+        </div>
+        <div class="flex gap-[15px] justify-center items-center">
+          <div>
+            <img class="w-[32px] h-[32px]" src="./imgs/Heart.svg" alt="" />
+          </div>
+          <p class="text-[#CCCCCC] text-[20px]">|</p>
+          <div class="flex gap-[10px]">
+            <img src="./imgs/Cart.svg" alt="" />
+            <div class="flex flex-col">
+              <p class="text-[#4D4D4D] text-[11px] font-Poppins">
+                Shopping cart:
+              </p>
+              <p class="text-[#1A1A1A] text-[14px] font-Poppins">$57.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="bg-[#333333] mt-[20px]">
+        <div
+          class="max-w-[1200px] mx-auto flex justify-between items-center py-[20px]"
+        >
+          <div class="flex gap-[20px]">
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Home"
+              >
+                Home
+              </option>
+            </select>
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Shop"
+              >
+                Shop
+              </option>
+            </select>
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Pages"
+              >
+                Pages
+              </option>
+            </select>
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Blog"
+              >
+                Blog
+              </option>
+            </select>
+            <a
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              href="About Us"
+              >About Us</a
+            >
+            <a
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              href="Contact Us"
+              >Contact Us</a
+            >
+          </div>
+          <div
+            class="flex gap-[10px] items-center cursor-pointer justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 
+         0 002.25-2.25v-1.372a1.125 1.125 0 
+         00-.852-1.091l-4.423-1.106a1.125 1.125 
+         0 00-1.173.417l-.97 1.293a12.036 12.036 
+         0 01-5.231-5.231l1.293-.97a1.125 1.125 
+         0 00.417-1.173L6.963 4.352A1.125 1.125 
+         0 005.872 3.5H4.5A2.25 2.25 0 
+         002.25 5.75v1z"
+              />
+            </svg>
+            <p class="text-[#999999] text-[14px] font-Poppins hover:text-white">
+              (219) 555-0114
+            </p>
+          </div>
+        </div>
+      </nav>
+      <div class="max-w-[1200px] mx-auto mt-[20px]">
+        <div class="flex gap-[10px]">
+      <div class="relative w-[900px] h-[540px] rounded-[10px] overflow-hidden">
+  <img 
+    class="w-full h-full object-cover" 
+    src="./imgs/bannerjpg" 
+    alt="Banner" 
+  />
+
+  <div class="absolute inset-0 bg-gradient-to-br from-[#00B207]/60 to-black/40"></div>
+
+  <div class="flex flex-col gap-[10px] absolute top-[100px] left-[30px] z-10">
+    <h1 class="max-w-[550px] text-[#FFFFFF] text-[48px] font-Poppins">
+      Fresh & Healthy Organic Food
+    </h1>
+    <div class="flex gap-[10px] items-center text-white">
+      <p class="text-[#FFFFFF] text-[20px] font-Poppins">Sale up to</p>
+      <button class="w-[100px] h-[30px] rounded-[5px] bg-[#FF8A00] text-[#FFFFFF text-[18px]">
+        64% OFF
+      </button>
+    </div>
+    <p class="text-[#FFFFFF] text-[14px] font-Poppins">Free shipping on all your order.</p>
+    <button
+      class="flex gap-[10px] w-[162px] h-[40px] text-[16px] rounded-[30px] items-center justify-center text-[#00B207] font-Poppins mt-[10px] cursor-pointer bg-white hover:bg-[#00B207] hover:text-white"
+    >
+      Shop Now
+      <span>→</span>
+    </button>
+  </div>
+</div>
+
+          <div class="flex flex-col gap-[20px]">
+            <div class="relative">
+              <img src="./imgs/BG (1).png" alt="" />
+              <div class="absolute left-[20px] top-[30px]">
+                <h2 class="text-[14px] text-[#1A1A1A] font-Poppins">
+                  SUMMER SALE
+                </h2>
+                <h1 class="text-[32px] text-[#1A1A1A] font-Poppins">75% OFF</h1>
+                <p class="text-[12px] text-[#666666] mt-[10px]">
+                  Only Fruit & Vegetable
+                </p>
+                <button
+                  class="flex gap-[10px] text-[16px] text-[#00B207] font-Poppins mt-[10px] cursor-pointer"
+                >
+                  Shop Now
+                  <p>→</p>
+                </button>
+              </div>
+            </div>
+            <div class="relative">
+              <img src="./imgs/BG (2).png" alt="" />
+              <div
+                class="absolute top-[0px] left-[20px] flex flex-col justify-center items-center text-center gap-[10px] py-[30px]"
+              >
+                <p class="text-[#FFFFFF] text[14px] font-Poppins">Best Deal</p>
+                <h1 class="text-[32px] text-[#FFFFFF] max-w-[300px]">
+                  Special Products Deal of the Month
+                </h1>
+                <button
+                  class="flex gap-[10px] text-[16px] text-[#00B207] font-Poppins mt-[10px] cursor-pointer"
+                >
+                  Shop Now
+                  <p>→</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex gap-[20px] mt-[20px] justify-between border border-[#e5e5e5] max-w-[1200px] h-[100px] mx-auto px-[20px] items-center"
+        >
+          <div class="flex gap-[10px] items-center">
+            <img src="./imgs/delivery-truck 1.svg" alt="" />
+            <div class="flex flex-col gap-[5px]">
+              <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
+                Free Shipping
+              </h6>
+              <p class="text-[#999999] text-[12px] font-Poppins">
+                Free shipping on all your order
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-[10px] items-center">
+            <img src="./imgs/headphones 1.svg" alt="" />
+            <div class="flex flex-col gap-[5px]">
+              <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
+                Customer Support 24/7
+              </h6>
+              <p class="text-[#999999] text-[12px] font-Poppins">
+                Instant access to Support
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-[10px] items-center">
+            <img src="./imgs/shopping-bag.svg" alt="" />
+            <div class="flex flex-col gap-[5px]">
+              <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
+                100% Secure Payment
+              </h6>
+              <p class="text-[#999999] text-[12px] font-Poppins">
+                We ensure your money is save
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-[10px] items-center">
+            <img src="./imgs/package.svg" alt="" />
+            <div class="flex flex-col gap-[5px]">
+              <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
+                Money-Back Guarantee
+              </h6>
+              <p class="text-[#999999] text-[12px] font-Poppins">
+                30 Days Money-Back Guarantee
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+    <main>
+      <section class="mt-[100px]">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="flex justify-between items-center">
+            <h2 class="text-[#1A1A1A] text-[32px] font-Poppins">
+              Popular Categories
+            </h2>
+            <button
+              class="flex gap-[10px] text-[16px] text-[#00B207] font-Poppins mt-[10px] cursor-pointer"
+            >
+              Wiew All
+              <p>→</p>
+            </button>
+          </div>
+          <div class="mt-[20px] flex gap-[10px]">
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (2).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Fresh Fruit
+              </p>
+            </div>
+
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (3).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Fresh Vegetables
+              </p>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (4).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Meat & Fish
+              </p>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (5).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Snacks
+              </p>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (2).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Beverages
+              </p>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (7).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Beauty & Health
+              </p>
+            </div>
+          </div>
+          <div class="mt-[20px] flex gap-[10px]">
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (8).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Bread & Bakery
+              </p>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (9).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Baking Needs
+              </p>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (10).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Cooking
+              </p>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (11).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Diabetic Food
+              </p>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (14).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Dish Detergents
+              </p>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+            >
+              <img src="./imgs/image 1 (13).png" alt="" />
+              <p
+                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+              >
+                Oil
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[100px]">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="flex justify-between items-center">
+            <h2 class="text-[#1A1A1A] text-[32px] font-Poppins">
+              Popular Products
+            </h2>
+            <button
+              class="flex gap-[10px] text-[16px] text-[#00B207] font-Poppins mt-[10px] cursor-pointer"
+            >
+              Wiew All
+              <p>→</p>
+            </button>
+          </div>
+          <div class="mt-[20px] flex gap-[10px]">
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+              <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px] hidden group-hover:block"
+              >
+                Sale 50%
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Product Image.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Green Apple
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$14.99
+                    <del class="text-[#999999] text-[15px] font-Poppins"
+                      >$20.99</del
+                    ></span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+           
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/malto.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Fresh Indian Malta
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$20.00
+                   </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+              <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px] hidden group-hover:block"
+              >
+                Sale 50%
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Chinese cabbage.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Chinese cabbage
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$12.00</span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+              
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Green Lettuce.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Green Lettuce
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$9.00
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+             
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Eggplant.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Eggplant
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$34.00
+                  </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="mt-[20px] flex gap-[10px]">
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+            
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/potato.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Big Potatoes
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$20.00
+                   
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+              <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px] hidden group-hover:block"
+              >
+                Sale 50%
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/corn.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Corn
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$20.00
+                  
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+            
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Fresh Cauliflower.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Fresh Cauliflower
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$12.00
+                  
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+             
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/q2.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Green Capsicum
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$9.00
+                    <del class="text-[#999999] text-[15px] font-Poppins"
+                      >$20.99</del
+                    ></span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+              <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px] hidden group-hover:block"
+              >
+                Sale 50%
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/qalampir.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                  Green Chili
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$34.00
+                   
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[100px]">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="flex gap-[10px]">
+            <div class="relative">
+              <img src="./imgs/month.png" alt="">
+              <div class="absolute top-[20px] left-[20px] flex flex-col gap-[10px] items-center justify-center mt-[30px]">
+                <h6 class="text-[#FFFFFF] text-[14px] font-Poppins">Best Deals</h6>
+                <h1 class="text-[#FFFFFF] text-[40px] font-Poppins">Sale of the Month</h1>
+                 <div class="flex gap-[20px] justify-center items-center">
+                    <div class="flex flex-col justify-center items-center">
+                      <h1 class="text-[#FFFFFF] text-[24px] font-Poppins">01</h1>
+                      <p class="text-[#FFFFFF] text-[12px] font-Poppins">DAYS</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                      <h1  class="text-[#FFFFFF] text-[24px] font-Poppins">23</h1>
+                      <p class="text-[#FFFFFF] text-[12px] font-Poppins">HOURS</p>
+                    </div>
+                    <p class="text-white">:</p>
+                    <div class="flex flex-col justify-center items-center">
+                      <h1  class="text-[#FFFFFF] text-[24px] font-Poppins">34</h1>
+                      <p class="text-[#FFFFFF] text-[12px] font-Poppins" >MINUTES</p>
+                    </div>
+                    <p class="text-white">:</p>
+                    <div class="flex flex-col justify-center items-center">
+                      <h1  class="text-[#FFFFFF] text-[24px] font-Poppins">57</h1>
+                      <p class="text-[#FFFFFF] text-[12px] font-Poppins">SECONDS</p>
+                    </div>
+                  </div>
+                   <button
+                  class="flex gap-[10px] w-[162px] h-[40px] text-[16px] rounded-[30px] flex items-center justify-center  text-[#00B207] font-Poppins mt-[10px] cursor-pointer bg-white hover:bg-[#00B207] hover:text-white"
+                >
+                  Shop Now
+                  <p>→</p>
+                </button>
+              </div>
+            </div>
+            <div class="relative">
+              <img src="./imgs/met.png" alt="">
+                <div class="absolute top-[20px] left-[20px] flex flex-col gap-[10px] items-center justify-center mt-[30px]">
+                <h6 class="text-[#FFFFFF] text-[14px] font-Poppins">85% Fat Free </h6>
+                <h1 class="text-[#FFFFFF] text-[40px] font-Poppins">Low-Fat Meat</h1>
+                 <div class="flex gap-[10px] items-center justify-center">
+                      <p class="text-[18px] text-[#FFFFFF] font-Poppins">Started at</p>
+                      <button class=" text-[#FCC900] text-[18px] ">$79.99</button>
+                    </div>
+                   <button
+                  class="flex gap-[10px] w-[162px] h-[40px] text-[16px] rounded-[30px] flex items-center justify-center  text-[#00B207] font-Poppins mt-[10px] cursor-pointer bg-white hover:bg-[#00B207] hover:text-white mt-[20px]"
+                >
+                  Shop Now
+                  <p>→</p>
+                </button>
+              </div>
+            </div>
+            <div class="relative">
+              <img src="./imgs/fruit.png" alt="">
+                <div class="absolute top-[20px] left-[20px] flex flex-col gap-[10px] items-center justify-center mt-[30px]">
+                <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">SUMMER SALE</h6>
+                <h1 class="text-[#1A1A1A] text-[40px] font-Poppins">100% Fresh Fruit</h1>
+                    <div class="flex gap-[10px] items-center justify-center">
+                      <p class="text-[18px] text-[#1A1A1A] font-Poppins">Up to</p>
+                      <button class="w-[100px] h-[40px] rounded-[5px] bg-[#1A1A1A] text-[#FCC900] text-[18px]">64% OFF</button>
+                    </div>
+                   <button
+                  class="flex gap-[10px] w-[162px] h-[40px] text-[16px] rounded-[30px] flex items-center justify-center  text-[#00B207] font-Poppins mt-[10px] cursor-pointer bg-white hover:bg-[#00B207] hover:text-white"
+                >
+                  Shop Now
+                  <p>→</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[100px] bg-[#F7F7F7]">
+      <div class="max-w-[1200px] mx-auto">
+          <div class="flex justify-between items-center py-[50px]">
+            <h2 class="text-[#1A1A1A] text-[32px] font-Poppins">
+             Hot Deals
+            </h2>
+            <button
+              class="flex gap-[10px] text-[16px] text-[#00B207] font-Poppins mt-[10px] cursor-pointer"
+            >
+              Wiew All
+              <p>→</p>
+            </button>
+          </div>
+          <div class=" flex gap-[10px] mt-[-20px]">
+            <div class="">
+              <div class="group w-[460px] h-[610px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col  py-[10px] px-[10px] bg-white">
+                <div>
+                  <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px] hidden group-hover:block font-Poppins"
+              >
+                Sale 50%
+              </button>
+                 <button
+                class="ml-[100px] absolute w-[80px] h-[25px] bg-[#2388FF] text-white text-[ 12px] rounded-[4px] hidden group-hover:block font-Poppins"
+              >
+               Best Sale
+              </button>
+                </div>
+                <div>
+                   <img src="./imgs/apple.png" alt="">
+                </div>
+                <div class="flex justify-between items-center mt-[-40px]">
+                  <img src="./imgs/Add To wishlist.svg" alt="">
+                  <button class="bg-[#00B207] w-[320px] h-[45px] text-[#FFFFFF] text-[14px] font-Poppins rounded-[30px] flex gap-[10px] items-center justify-center "> Add to Cart <img src="./imgs/Rectangle (1).svg" alt=""></button>
+                  <img src="./imgs/Quick View.svg" alt="">
+                </div>
+                <div class=" flex flex-col gap-[10px] items-center justify-center mt-[30px]">
+                  <p class="text-[#4D4D4D] text-[18px] font-Poppins group-hover:text-[#00B207]">Chinese cabbage</p>
+                  <span class="text-[#1A1A1A] text-[24px] font-Poppins">$12.00 <del class="text-[#999999] text-[24px] font-Poppins">$24.00</del></span>
+                  <div class="flex gap-[10px]">
+                    <img class="" src="./imgs/Rating.svg" alt="">
+                    <span class="text-[#808080] text-[12px] font-Poppins"> (524 Feedback)</span>
+                  </div>
+                  <p class="text-[#999999] text-[14px] font-Poppins ">Hurry up! Offer ends In:</p>
+                  <div class="flex gap-[20px] justify-center items-center">
+                    <div class="flex flex-col justify-center items-center">
+                      <h1 class="text-[#1A1A1A] text-[18px] font-Poppins">01</h1>
+                      <p class="text-[#999999] text-[10px] font-Poppins">DAYS</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                      <h1  class="text-[#1A1A1A] text-[18px] font-Poppins">23</h1>
+                      <p class="text-[#999999] text-[10px] font-Poppins">HOURS</p>
+                    </div>
+                    <p>:</p>
+                    <div class="flex flex-col justify-center items-center">
+                      <h1  class="text-[#1A1A1A] text-[18px] font-Poppins">34</h1>
+                      <p class="text-[#999999] text-[10px] font-Poppins" >MINUTES</p>
+                    </div>
+                    <p>:</p>
+                    <div class="flex flex-col justify-center items-center">
+                      <h1  class="text-[#1A1A1A] text-[18px] font-Poppins">57</h1>
+                      <p class="text-[#999999] text-[10px] font-Poppins">SECONDS</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-x-[6px] gap-y-[10px]"  >
+
+             <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+              <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px] hidden group-hover:block"
+              >
+                Sale 50%
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Chinese cabbage.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Chinese cabbage
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$12.00</span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+              <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+              
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Green Lettuce.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Green Lettuce
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$9.00
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+                <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+             
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Eggplant.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Eggplant
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$34.00
+                  </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+              <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+            
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Fresh Cauliflower.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Fresh Cauliflower
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$12.00
+                  
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+               <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+             
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/q2.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Green Capsicum
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$9.00
+                    <del class="text-[#999999] text-[15px] font-Poppins"
+                      >$20.99</del
+                    ></span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+                 <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+              <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px] hidden group-hover:block"
+              >
+                Sale 50%
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/qalampir.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                  Green Chili
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$34.00
+                   
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="flex gap-[5px] mt-[20px]">
+          <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+            
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/potato.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Big Potatoes
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$20.00
+                   
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+              <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px] hidden group-hover:block"
+              >
+                Sale 50%
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/corn.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Corn
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$20.00
+                  
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+                <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+            
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/chili.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                 Red Chili
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$12.00
+                   
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+                <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+            
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/tomatos.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                  Red Tomatos
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$9.00
+                   <del class="text-[#999999] text-[15px] font-Poppins">$20.99</del>
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+                <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative bg-white"
+            >
+            
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/mango.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Surjapur Mango
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$34.00
+                   
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      </section>
+    </main>
   </body>
 </html>
