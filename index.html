@@ -6,6 +6,7 @@
     <title>Ecobazar</title>
      <link rel="icon" type="image/png" href="./imgs/eco.svg" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
       @font-face {
         font-family: "Poppins";
@@ -298,197 +299,236 @@
             </div>
           </div>
         </div>
-        <div
-          class="flex gap-[20px] mt-[20px] justify-between border border-[#e5e5e5] max-w-[1200px] h-[100px] mx-auto px-[20px] items-center"
-        >
-          <div class="flex gap-[10px] items-center">
-            <img src="./imgs/delivery-truck 1.svg" alt="" />
-            <div class="flex flex-col gap-[5px]">
-              <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
-                Free Shipping
-              </h6>
-              <p class="text-[#999999] text-[12px] font-Poppins">
-                Free shipping on all your order
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-[10px] items-center">
-            <img src="./imgs/headphones 1.svg" alt="" />
-            <div class="flex flex-col gap-[5px]">
-              <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
-                Customer Support 24/7
-              </h6>
-              <p class="text-[#999999] text-[12px] font-Poppins">
-                Instant access to Support
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-[10px] items-center">
-            <img src="./imgs/shopping-bag.svg" alt="" />
-            <div class="flex flex-col gap-[5px]">
-              <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
-                100% Secure Payment
-              </h6>
-              <p class="text-[#999999] text-[12px] font-Poppins">
-                We ensure your money is save
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-[10px] items-center">
-            <img src="./imgs/package.svg" alt="" />
-            <div class="flex flex-col gap-[5px]">
-              <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
-                Money-Back Guarantee
-              </h6>
-              <p class="text-[#999999] text-[12px] font-Poppins">
-                30 Days Money-Back Guarantee
-              </p>
-            </div>
-          </div>
-        </div>
+       <div
+  class="flex gap-[20px] mt-[20px] justify-between border border-[#e5e5e5] max-w-[1200px] h-[100px] mx-auto px-[20px] items-center"
+>
+  <div class="flex gap-[10px] items-center" data-aos="fade-right">
+    <img src="./imgs/delivery-truck 1.svg" alt="" />
+    <div class="flex flex-col gap-[5px]">
+      <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
+        Free Shipping
+      </h6>
+      <p class="text-[#999999] text-[12px] font-Poppins">
+        Free shipping on all your order
+      </p>
+    </div>
+  </div>
+
+  <div class="flex gap-[10px] items-center" data-aos="fade-up" data-aos-delay="100">
+    <img src="./imgs/headphones 1.svg" alt="" />
+    <div class="flex flex-col gap-[5px]">
+      <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
+        Customer Support 24/7
+      </h6>
+      <p class="text-[#999999] text-[12px] font-Poppins">
+        Instant access to Support
+      </p>
+    </div>
+  </div>
+
+  <div class="flex gap-[10px] items-center" data-aos="fade-up" data-aos-delay="200">
+    <img src="./imgs/shopping-bag.svg" alt="" />
+    <div class="flex flex-col gap-[5px]">
+      <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
+        100% Secure Payment
+      </h6>
+      <p class="text-[#999999] text-[12px] font-Poppins">
+        We ensure your money is save
+      </p>
+    </div>
+  </div>
+
+  <div class="flex gap-[10px] items-center" data-aos="fade-left" data-aos-delay="300">
+    <img src="./imgs/package.svg" alt="" />
+    <div class="flex flex-col gap-[5px]">
+      <h6 class="text-[#1A1A1A] text-[14px] font-Poppins">
+        Money-Back Guarantee
+      </h6>
+      <p class="text-[#999999] text-[12px] font-Poppins">
+        30 Days Money-Back Guarantee
+      </p>
+    </div>
+  </div>
+</div>
+
       </div>
     </header>
     <main>
-      <section class="mt-[100px]">
-        <div class="max-w-[1200px] mx-auto">
-          <div class="flex justify-between items-center">
-            <h2 class="text-[#1A1A1A] text-[32px] font-Poppins">
-              Popular Categories
-            </h2>
-            <button
-              class="flex gap-[10px] text-[16px] text-[#00B207] font-Poppins mt-[10px] cursor-pointer"
-            >
-              Wiew All
-              <p>→</p>
-            </button>
-          </div>
-          <div class="mt-[20px] flex gap-[10px]">
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (2).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Fresh Fruit
-              </p>
-            </div>
+     <section class="mt-[100px]">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="flex justify-between items-center" data-aos="fade-down">
+      <h2 class="text-[#1A1A1A] text-[32px] font-Poppins">
+        Popular Categories
+      </h2>
+      <button
+        class="flex gap-[10px] text-[16px] text-[#00B207] font-Poppins mt-[10px] cursor-pointer"
+        data-aos="fade-left"
+      >
+        Wiew All
+        <p>→</p>
+      </button>
+    </div>
 
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (3).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Fresh Vegetables
-              </p>
-            </div>
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (4).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Meat & Fish
-              </p>
-            </div>
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (5).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Snacks
-              </p>
-            </div>
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (2).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Beverages
-              </p>
-            </div>
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (7).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Beauty & Health
-              </p>
-            </div>
-          </div>
-          <div class="mt-[20px] flex gap-[10px]">
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (8).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Bread & Bakery
-              </p>
-            </div>
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (9).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Baking Needs
-              </p>
-            </div>
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (10).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Cooking
-              </p>
-            </div>
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (11).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Diabetic Food
-              </p>
-            </div>
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (14).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Dish Detergents
-              </p>
-            </div>
-            <div
-              class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
-            >
-              <img src="./imgs/image 1 (13).png" alt="" />
-              <p
-                class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
-              >
-                Oil
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="mt-[20px] flex gap-[10px]">
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="zoom-in"
+      >
+        <img src="./imgs/image 1 (2).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Fresh Fruit
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <img src="./imgs/image 1 (3).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Fresh Vegetables
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
+        <img src="./imgs/image 1 (4).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Meat & Fish
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
+        <img src="./imgs/image 1 (5).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Snacks
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      >
+        <img src="./imgs/image 1 (2).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Beverages
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+      >
+        <img src="./imgs/image 1 (7).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Beauty & Health
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-[20px] flex gap-[10px]">
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="fade-up"
+      >
+        <img src="./imgs/image 1 (8).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Bread & Bakery
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <img src="./imgs/image 1 (9).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Baking Needs
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <img src="./imgs/image 1 (10).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Cooking
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <img src="./imgs/image 1 (11).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Diabetic Food
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <img src="./imgs/image 1 (14).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Dish Detergents
+        </p>
+      </div>
+
+      <div
+        class="group flex flex-col items-center gap-[15px] w-[192px] h-[200px] border-[1px] border-[#e5e5e5] rounded-[5px] cursor-pointer hover:border-[#00B207] transition py-[10px]"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <img src="./imgs/image 1 (13).png" alt="" />
+        <p
+          class="text-[#1A1A1A] text-[15px] font-Poppins group-hover:text-[#00B207]"
+        >
+          Oil
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section class="mt-[100px]">
         <div class="max-w-[1200px] mx-auto">
           <div class="flex justify-between items-center">
@@ -1314,6 +1354,11 @@
         </div>
       </div>
       </section>
+      
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
