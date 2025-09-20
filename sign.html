@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecobazar</title>
+    <link rel="icon" type="image/png" href="./imgs/eco.svg" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        src: url("./Poppins/Poppins-Regular.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="border-b border-[#e5e5e5]">
+        <div
+          class="max-w-[1200px] mx-auto flex justify-between items-center py-2"
+        >
+          <div>
+            <p class="text-[12px] text-[#666666] font-Poppins">
+              📍 Store Location: Lincoln-344, Illinois, Chicago, USA
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <select
+              id="lang"
+              name="lang"
+              class="text-[#666666] text-[12px] font-Poppins"
+            >
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="en"
+                selected
+              >
+                English (ENG)
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="uz"
+              >
+                O‘zbekcha (UZB)
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="ru"
+              >
+                Русский (RUS)
+              </option>
+            </select>
+            <select
+              id="currency"
+              name="currency"
+              class="text-[#666666] text-[12px] font-Poppins"
+            >
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="usd"
+                selected
+              >
+                USD – Dollar
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="eur"
+              >
+                EUR – Euro
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="uzs"
+              >
+                UZS – So‘m
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="rub"
+              >
+                RUB – Rubl
+              </option>
+            </select>
+            <p class="text-[#666666] text-[12px] font-Poppins">|</p>
+            <div class="flex gap-2">
+              <button
+                class="text-[#666666] text-[12px] font-Poppins cursor-pointer"
+              >
+                Sign In
+              </button>
+              <p class="text-[#666666] text-[12px] font-Poppins">/</p>
+              <button
+                class="text-[#666666] text-[12px] font-Poppins cursor-pointer"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-[1200px] mx-auto justify-between flex mt-[20px]">
+        <div>
+          <a href="./index.html"><img src="./imgs/Logo (2).svg" alt="" /></a>
+        </div>
+        <div class="flex">
+          <input
+            class="w-[300px] h-[40px] border border-[#e5e5e5] px-3 rounded-l-[5px] text-[#808080] text-[15px] font-poppins focus:outline-none focus:ring-2 focus:ring-[#00B207]/50"
+            type="text"
+            placeholder="🔍 Search"
+          />
+          <button
+            class="w-[100px] h-[40px] bg-[#00B207] text-white text-[15px] font-poppins rounded-r-[5px] hover:bg-green-600 transition"
+          >
+            Search
+          </button>
+        </div>
+        <div class="flex gap-[15px] justify-center items-center">
+          <div>
+            <img class="w-[32px] h-[32px]" src="./imgs/Heart.svg" alt="" />
+          </div>
+          <p class="text-[#CCCCCC] text-[20px]">|</p>
+          <div class="flex gap-[10px]">
+            <img src="./imgs/Cart.svg" alt="" />
+            <div class="flex flex-col">
+              <p class="text-[#4D4D4D] text-[11px] font-Poppins">
+                Shopping cart:
+              </p>
+              <p class="text-[#1A1A1A] text-[14px] font-Poppins">$57.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="bg-[#1A1A1A] mt-[20px]">
+        <div
+          class="max-w-[1200px] mx-auto flex justify-between items-center py-[20px]"
+        >
+          <div class="flex gap-[20px]">
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Home"
+              >
+                Home
+              </option>
+            </select>
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Shop"
+              >
+                Shop
+              </option>
+            </select>
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Pages"
+              >
+                Pages
+              </option>
+            </select>
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Blog"
+              >
+                Blog
+              </option>
+            </select>
+            <a
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              href="About Us"
+              >About Us</a
+            >
+            <a
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              href="Contact Us"
+              >Contact Us</a
+            >
+          </div>
+          <div
+            class="flex gap-[10px] items-center cursor-pointer justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 
+         0 002.25-2.25v-1.372a1.125 1.125 0 
+         00-.852-1.091l-4.423-1.106a1.125 1.125 
+         0 00-1.173.417l-.97 1.293a12.036 12.036 
+         0 01-5.231-5.231l1.293-.97a1.125 1.125 
+         0 00.417-1.173L6.963 4.352A1.125 1.125 
+         0 005.872 3.5H4.5A2.25 2.25 0 
+         002.25 5.75v1z"
+              />
+            </svg>
+            <p class="text-[#999999] text-[14px] font-Poppins hover:text-white">
+              (219) 555-0114
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="mt-[100px] mx-auto flex">
+        <div class="max-w-[1200px] mx-auto">
+          <div
+            class="w-[520px] h-[371px] shadow-md flex flex-col gap-[20px] items-center justify-center rounded-[20px]"
+          >
+            <h1 class="text-[32px] text-[#1A1A1A]">Sign In</h1>
+            <input
+              class="w-[470px] h-[50px] border border-[#e5e5e5] rounded-[10px] px-[20px]"
+              type="text"
+              placeholder="Email"
+            />
+            <input
+              class="w-[470px] h-[50px] border border-[#e5e5e5] rounded-[10px] px-[20px]"
+              type="text"
+              placeholder="Password"
+            />
+            <div class="flex justify-between items-center gap-[180px]">
+              <label class="inline-flex items-center gap-3">
+                <input
+                  type="checkbox"
+                  class="w-5 h-5 rounded border-gray-300 focus:ring-2 focus:ring-green-300"
+                />
+                <span
+                  class="text-sm font-medium text-[#666666] text-[14px] font-Poppins"
+                  >Remember me</span
+                >
+              </label>
+              <p class="text-[#666666] text-[14px] font-Poppins">
+                Forget Password
+              </p>
+            </div>
+            <button
+              class="bg-[#00B207] w-[470px] h-[50px] rounded-[30px] text-white cursor-pointer font-Poppins font-bold"
+            >
+              Login
+            </button>
+            <div class="flex gap-[10px]">
+              <p class="text-[#666666] text-[14px] font-Poppins">
+                Don’t have account?
+              </p>
+              <a class="text-[#1A1A1A] text-[14px] font-Poppins" href="./register.html"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[50px] bg-[#F7F7F7] py-[50px]">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="flex justify-between items-center">
+            <div>
+              <h1 class="text-[#1A1A1A] text-[24px] font-Poppins">
+                Subcribe our Newsletter
+              </h1>
+              <p
+                class="max-w-[448px] text-[14px] text-[#999999] font-Poppins mt-[10px]"
+              >
+                Pellentesque eu nibh eget mauris congue mattis mattis nec
+                tellus. Phasellus imperdiet elit eu magna.
+              </p>
+            </div>
+            <div>
+              <input
+                class="text-[#808080] text-[16px] font-Poppins w-[490px] h-[52px] px-[20px] bg-white rounded-[30px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-gray-400"
+                type="text"
+                placeholder="Your email address"
+              />
+              <button
+                class="text-[#FFFFFF] text-[16px] bg-[#00B207] font-Poppins rounded-[30px] w-[160px] h-[52px] ml-[-160px] hover:border hover:border-[#00B207] cursor-pointer"
+              >
+                Subscribe
+              </button>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./imgs/Social Media.png" alt="" />
+              <img src="./imgs/Social Media (1).png" alt="" />
+              <img src="./imgs/Social Media (2).png" alt="" />
+              <img src="./imgs/Social Media (3).png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#1A1A1A] py-[50px]">
+      <div class="max-w-[1200px] mx-auto">
+        <div
+          class="flex justify-between mt-[30px] items-center border-b-[1px] border-[#808080] pb-[50px]"
+        >
+          <div class="flex flex-col gap-[25px]">
+            <img class="w-[250px]" src="./imgs/foter logo.svg" alt="" />
+            <p class="max-w-[336px] text-[#808080] text-[14px] font-Poppins">
+              Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis
+              dui, eget bibendum magna congue nec.
+            </p>
+            <div class="flex gap-[10px] juftify-center items-center">
+              <p class="text-[#FFFFFF] text-[14px] font-Poppins">
+                (219) 555-0114
+              </p>
+              <span class="text-[#808080] text-[16px] font-Poppins">or</span>
+              <p class="text-[#FFFFFF] text-[14px] font-Poppins">
+                Proxy@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <p class="text-[16px] text-[#FFFFFF] font-Poppins">My Account</p>
+            <div class="flex flex-col gap-[15px]">
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >My Account</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Order History</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Shoping Cart</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Wishlist</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <p class="text-[16px] text-[#FFFFFF] font-Poppins">Helps</p>
+            <div class="flex flex-col gap-[15px]">
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Contact</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Faqs</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Terms & Condition</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Privacy Policy</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <p class="text-[16px] text-[#FFFFFF] font-Poppins">Proxy</p>
+            <div class="flex flex-col gap-[15px]">
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >About</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Shop</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Product</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Track Order</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <p class="text-[16px] text-[#FFFFFF] font-Poppins">Categories</p>
+            <div class="flex flex-col gap-[15px]">
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Fruit & Vegetables</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Meat & Fish</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Bread & Bakery</a
+              >
+              <a
+                class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"
+                href=""
+                >Beauty & Health</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center mt-[30px]">
+          <div>
+            <p class="text-[#808080] text-[14px] font-Poppins">
+              Ecobazar eCommerce © 2021. All Rights Reserved
+            </p>
+          </div>
+          <div>
+            <img src="./imgs/fot.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

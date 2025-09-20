@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecobazar</title>
+    <link rel="icon" type="image/png" href="./imgs/eco.svg" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        src: url("./Poppins/Poppins-Regular.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="border-b border-[#e5e5e5]">
+        <div
+          class="max-w-[1200px] mx-auto flex justify-between items-center py-2"
+        >
+          <div>
+            <p class="text-[12px] text-[#666666] font-Poppins">
+              📍 Store Location: Lincoln-344, Illinois, Chicago, USA
+            </p>
+          </div>
+          <div class="flex gap-2 items-center">
+            <select
+              id="lang"
+              name="lang"
+              class="text-[#666666] text-[12px] font-Poppins"
+            >
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="en"
+                selected
+              >
+                English (ENG)
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="uz"
+              >
+                O‘zbekcha (UZB)
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="ru"
+              >
+                Русский (RUS)
+              </option>
+            </select>
+            <select
+              id="currency"
+              name="currency"
+              class="text-[#666666] text-[12px] font-Poppins"
+            >
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="usd"
+                selected
+              >
+                USD – Dollar
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="eur"
+              >
+                EUR – Euro
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="uzs"
+              >
+                UZS – So‘m
+              </option>
+              <option
+                class="text-[#666666] text-[12px] font-Poppins"
+                value="rub"
+              >
+                RUB – Rubl
+              </option>
+            </select>
+            <p class="text-[#666666] text-[12px] font-Poppins">|</p>
+            <div class="flex gap-2 items-center">
+            <a href="./sign.html">
+                <button
+                class="text-[#666666] text-[12px] font-Poppins cursor-pointer"
+              >
+                Sign In
+              </button>
+            </a>
+              <p class="text-[#666666] text-[12px] font-Poppins">/</p>
+            <a href="./register.html">
+                <button
+                class="text-[#666666] text-[12px] font-Poppins cursor-pointer"
+              >
+                Sign Up
+              </button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-[1200px] mx-auto justify-between flex mt-[20px]">
+        <div>
+          <a href="./index.html"><img src="./imgs/Logo (2).svg" alt="" /></a>
+        </div>
+        <div class="flex">
+          <input
+            class="w-[300px] h-[40px] border border-[#e5e5e5] px-3 rounded-l-[5px] text-[#808080] text-[15px] font-poppins focus:outline-none focus:ring-2 focus:ring-[#00B207]/50"
+            type="text"
+            placeholder="🔍 Search"
+          />
+          <button
+            class="w-[100px] h-[40px] bg-[#00B207] text-white text-[15px] font-poppins rounded-r-[5px] hover:bg-green-600 transition"
+          >
+            Search
+          </button>
+        </div>
+        <div class="flex gap-[15px] justify-center items-center">
+          <div>
+            <img class="w-[32px] h-[32px]" src="./imgs/Heart.svg" alt="" />
+          </div>
+          <p class="text-[#CCCCCC] text-[20px]">|</p>
+          <div class="flex gap-[10px]">
+            <img src="./imgs/Cart.svg" alt="" />
+            <div class="flex flex-col">
+              <p class="text-[#4D4D4D] text-[11px] font-Poppins">
+                Shopping cart:
+              </p>
+              <p class="text-[#1A1A1A] text-[14px] font-Poppins">$57.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="bg-[#FFFFFF] mt-[20px]">
+        <div
+          class="max-w-[1200px] mx-auto flex justify-between items-center py-[20px]"
+        >
+          <div class="flex gap-[20px]">
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Home"
+              >
+                Home
+              </option>
+            </select>
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Shop"
+              >
+                Shop
+              </option>
+            </select>
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Pages"
+              >
+                Pages
+              </option>
+            </select>
+            <select
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              name=""
+              id=""
+            >
+              <option
+                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                value="Blog"
+              >
+                Blog
+              </option>
+            </select>
+            <a
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              href="About Us"
+              >About Us</a
+            >
+            <a
+              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              href="Contact Us"
+              >Contact Us</a
+            >
+          </div>
+          <div
+            class="flex gap-[10px] items-center cursor-pointer justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 
+         0 002.25-2.25v-1.372a1.125 1.125 0 
+         00-.852-1.091l-4.423-1.106a1.125 1.125 
+         0 00-1.173.417l-.97 1.293a12.036 12.036 
+         0 01-5.231-5.231l1.293-.97a1.125 1.125 
+         0 00.417-1.173L6.963 4.352A1.125 1.125 
+         0 005.872 3.5H4.5A2.25 2.25 0 
+         002.25 5.75v1z"
+              />
+            </svg>
+            <p class="text-[#999999] text-[14px] font-Poppins hover:text-white">
+              (219) 555-0114
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="relative h-[100px] bg-[url('./img/smal.jpg')] bg-cover bg-no-repeat bg-center"
+      >
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <div
+          class="relative max-w-[1200px] mx-auto flex gap-[20px] items-center h-full px-5"
+        >
+          <img src="./img/Group (2).svg" alt="" class="w-[20px] h-[20px]" />
+          <a class="text-white [16px] font-Poppins hover:text-[#00B207]" href=""
+            >Category</a
+          >
+          <a class="text-white [16px] font-Poppins hover:text-[#00B207]" href=""
+            >Vegetables</a
+          >
+          <a class="text-white [16px] font-Poppins hover:text-[#00B207]" href=""
+            >Chinese Cabbage</a
+          >
+        </div>
+      </section>
+      <section class="mt-[50px]">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-[40px] justify-between items-center">
+              <div class="flex flex-col gap-[20px]">
+                <div
+                  id="actives"
+                  class="w-[80px] h-[80px] rounded-[5px] overflow-hidden"
+                >
+                  <img
+                    id="Product1"
+                    class="w-full h-full object-contain cursor-pointer"
+                    src="./img/k.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="actives1"
+                  class="w-[80px] h-[80px] rounded-[5px] overflow-hidden"
+                >
+                  <img
+                    id="Product2"
+                    class="w-full h-full object-contain cursor-pointer"
+                    src="./img/Napa Cabbage on White Background.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="actives2"
+                  class="w-[80px] h-[80px] rounded-[5px] overflow-hidden"
+                >
+                  <img
+                    id="Product3"
+                    class="w-full h-full object-contain cursor-pointer"
+                    src="./img/Napa Cabbage Halves in Detail.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="actives3"
+                  class="w-[80px] h-[80px] rounded-[5px] overflow-hidden cursor-pointer"
+                >
+                  <img
+                    id="Product4"
+                    class="w-full h-full object-contain"
+                    src="./img/cb00ab131cedd52fb9502b0468325f36.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div
+                class="w-[500px] h-[500px] rounded-[5px] flex items-center justify-center"
+              >
+                <img
+                  id="MainProduct"
+                  class="w-full h-full object-contain"
+                  src="./img/1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="flex flex-col gap-[15px] border-b border-[#e5e5e5] pb-[15px]"
+              >
+                <div class="flex items-center gap-[10px]">
+                  <h1 class="text-[#1A1A1A] text-[36px] font-Poppins font-bold">
+                    Chinese Cabbage
+                  </h1>
+                  <button
+                    class="text-[#2C742F] text-[14px] font-Poppins w-[71px] h-[29px] bg-[#20B52633] rounded-[4px]"
+                  >
+                    In Stock
+                  </button>
+                </div>
+                <div class="flex gap-[20px] items-center">
+                  <p class="flex gap-[10px] text-[14px] text-[#666666]">
+                    <span class="text-[#FF8A00]">★★★★★</span> 4 Review
+                  </p>
+                  <p
+                    class="flex gap-[10px] text-[#333333] text-[14px] font-Poppins"
+                  >
+                    SKU:
+                    <span class="text-[#666666] text-[14px] font-Poppins"
+                      >2,51,594</span
+                    >
+                  </p>
+                </div>
+                <div class="flex gap-[10px] items-center">
+                  <p
+                    class="text-[24px] text-[#2C742F] font-Poppins flex gap-[10px] items-center"
+                  >
+                    <del class="text-[20px] text-[#B3B3B3] font-Poppins"
+                      >$48.00</del
+                    >$17.28
+                  </p>
+                  <button
+                    class="text-[14px] text-[#EA4B48] font-Poppins bg-[#EA4B481A] w-[74px] h-[27px] rounded-[30px]"
+                  >
+                    64% Off
+                  </button>
+                </div>
+              </div>
+              <div class="border-b border-[#e5e5e5] py-[15px]">
+                <div class="mt-[20px] flex justify-between">
+                  <div class="flex gap-[10px] items-center">
+                    <h1 class="text-[14px] text-[#1A1A1A] font-Poppins">
+                      Brand:
+                    </h1>
+                    <img
+                      class="cursor-pointer"
+                      src="./img/Group 19.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex gap-[10px] items-center">
+                    <h1 class="text-[14px] text-[#1A1A1A] font-Poppins">
+                      Share item:
+                    </h1>
+                    <img class="cursor-pointer" src="./img/Share.svg" alt="" />
+                  </div>
+                </div>
+                <p class="text-[#808080] text-[14px] max-w-[568px] mt-[30px]">
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
+                  consequat nec, ultrices et ipsum. Nulla varius magna a
+                  consequat pulvinar.
+                </p>
+              </div>
+              <div
+                class="mt-[20px] flex justify-between items-center border-b border-[#e5e5e5] pb-[15px]"
+              >
+                <div
+                  class="w-[100px] h-[50px] border-1 border-[#E6E6E6] text-[#1A1A1A] text-[14px] font-Poppins flex justify-between items-center gap-[10px] rounded-[170px] cursur-pointer px-[20px]"
+                >
+                  <button class="cursor-pointer text-[20px]" id="minus">
+                    -
+                  </button>
+                  <span
+                    id="count"
+                    class="text-[#1A1A1A] text-[16px] font-Poppins font-bold cursor-pointer"
+                    >1</span
+                  >
+                  <button class="cursor-pointer text-[20px]" id="plus">
+                    +
+                  </button>
+                </div>
+                <button
+                  class="w-[400px] h-[50px] bg-[#00B207] text-white font-Poppins text-[14px] font-bold flex justify-center items-center gap-[10px] rounded-[170px] cursor-pointer"
+                >
+                  Add to Cart <img src="./img/lo.svg" alt="" />
+                </button>
+                <div class="">
+                  <img class="" src="./imgs/Add To wishlist.svg" alt="" />
+                </div>
+              </div>
+              <div class="mt-[20px]">
+                <p class="text-[#1A1A1A] text-[14px] font-Poppins">
+                  Category:
+                  <span class="text-[#808080] text-[14px] font-Poppins"
+                    >Vegetables</span
+                  >
+                </p>
+                <p
+                  class="text-[#1A1A1A] text-[14px] font-Poppins flex gap-[5px] items-center mt-[10px]"
+                >
+                  Tag:
+                  <span class="text-[#808080] text-[14px] font-Poppins"
+                    >Vegetables Healthy</span
+                  >Chinese
+                  <span class="text-[#808080] text-[14px] font-Poppins"
+                    >Cabbage</span
+                  ><span class="text-[#808080] text-[14px] font-Poppins"
+                    >Cabbage</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[100px]">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="flex justify-between border-b border-[#e5e5e5] pb-[20px]">
+            <div
+              class="flex gap-[40px] items-center justify-center text-center translate-x-[50%]"
+            >
+              <h2 id="d1"
+                class="text-[#808080] text-[16px] font-Poppins cursor-pointer hover:text-[#00B207] active:text-[#00B207]"
+              >
+                Descriptions
+              </h2>
+              <h2 id="d2"
+                class="text-[#808080] text-[16px] font-Poppins cursor-pointer hover:text-[#00B207] active:text-[#00B207]"
+              >
+                Additional Information
+              </h2>
+              <h2 id="d3"
+                class="text-[#808080] text-[16px] font-Poppins cursor-pointer hover:text-[#00B207] active:text-[#00B207]"
+              >
+                Customer Feedback
+              </h2>
+            </div>
+          </div>
+          <div id="dele1" class="mt-[20px] flex justify-between gap-[40px]">
+            <div>
+              <p class="text-[#808080] text-[14px] font-poppins max-w-[648px]">
+                Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet
+                at posuere ac, viverra at mauris. Maecenas tincidunt ligula a
+                sem vestibulum pharetra. Maecenas auctor tortor lacus, nec
+                laoreet nisi porttitor vel. Etiam tincidunt metus vel dui
+                interdum sollicitudin. Mauris sem ante, vestibulum nec orci
+                vitae, aliquam mollis lacus. Sed et condimentum arcu, id
+                molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a
+                convallis. Morbi urna ipsum, placerat quis commodo quis, egestas
+                elementum leo. Donec convallis mollis enim. Aliquam id mi quam.
+                Phasellus nec fringilla elit.
+              </p>
+              <p
+                class="text-[#808080] text-[14px] font-poppins max-w-[648px] mt-[20px]"
+              >
+                Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui.
+                Sed iaculis, metus faucibus elementum tincidunt, turpis mi
+                viverra velit, pellentesque tristique neque mi eget nulla. Proin
+                luctus elementum neque et pharetra.
+              </p>
+              <div class="flex flex-col gap-[10px]">
+                <div class="flex gap-[10px] mt-[20px]">
+                  <img src="./img/Check.svg" alt="" />
+                  <p class="text-[#808080] text-[14px] font-Poppins">
+                    100 g of fresh leaves provides.
+                  </p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <img src="./img/Check.svg" alt="" />
+                  <p class="text-[#808080] text-[14px] font-Poppins">
+                    100 g of fresh leaves provides.
+                  </p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <img src="./img/Check.svg" alt="" />
+                  <p class="text-[#808080] text-[14px] font-Poppins">
+                    100 g of fresh leaves provides.
+                  </p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <img src="./img/Check.svg" alt="" />
+                  <p class="text-[#808080] text-[14px] font-Poppins">
+                    100 g of fresh leaves provides.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-[#808080] text-[14px] font-poppins max-w-[648px] mt-[20px]"
+              >
+                Cras et diam maximus, accumsan sapien et, sollicitudin velit.
+                Nulla blandit eros non turpis lobortis iaculis at ut massa.
+              </p>
+            </div>
+            <div>
+              <img src="./img/Image (20).png" alt="" />
+              <div
+                class="flex gap-[20px] w-[537px] h-[100px] border-1 border-[#e5e5e5] rounded-[10px] mt-[30px] justify-center items-center"
+              >
+                <div class="flex gap-[10px] justify-center items-center">
+                  <img src="./img/price-tag 1.svg" alt="" />
+                  <div class="flex flex-col">
+                    <h1 class="text-[#1A1A1A] text-[14px] font-Poppins">
+                      64% Discount
+                    </h1>
+                    <p class="text-[13px] text-[#808080] font-Poppins">
+                      Save your 64% money with us
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-[10px] justify-center items-center">
+                  <img src="./img/leaf 1.svg" alt="" />
+                  <div class="flex flex-col">
+                    <h1 class="text-[#1A1A1A] text-[14px] font-Poppins">
+                      100% Organic
+                    </h1>
+                    <p class="text-[13px] text-[#808080] font-Poppins">
+                      100% Organic Vegetables
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section >
+
+ <section id="dele2" class="mt-[100px] hidden">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="flex justify-between border-b border-[#e5e5e5] pb-[20px]">
+            <div class="flex flex-col justify-between">
+              <div class="flex gap-[30px]">
+                <h1 class="text-[#1A1A1A] text-[14px] font-Poppins font-bold">Weight:</h1>
+                <p class="text-[#666666] text-[14px] font-Poppins">03</p>
+              </div>
+              <div class="flex gap-[30px]">
+                <h1 class="text-[#1A1A1A] text-[14px] font-Poppins font-bold">Color:</h1>
+                <p class="text-[#666666] text-[14px] font-Poppins">Green</p>
+              </div><div class="flex gap-[30px]">
+                <h1 class="text-[#1A1A1A] text-[14px] font-Poppins font-bold">Type:</h1>
+                <p class="text-[#666666] text-[14px] font-Poppins">Organic</p>
+              </div><div class="flex gap-[30px]">
+                <h1 class="text-[#1A1A1A] text-[14px] font-Poppins font-bold">Category:</h1>
+                <p class="text-[#666666] text-[14px] font-Poppins">Vegetables</p>
+              </div>
+              <div class="flex gap-[30px]">
+                <h1 class="text-[#1A1A1A] text-[14px] font-Poppins font-bold">Stock Status::</h1>
+                <p class="text-[#666666] text-[14px] font-Poppins">Available (5,413)</p>
+              </div>
+              <div class="flex gap-[30px] items-center juftify-center ">
+
+                <h1 class="text-[#1A1A1A] text-[14px] font-Poppins font-bold">Tags:</h1>
+                 <p
+                  class="text-[#1A1A1A] text-[14px] font-Poppins flex gap-[5px] items-center "
+                >
+                  Tag:
+                  <span class="text-[#808080] text-[14px] font-Poppins"
+                    >Vegetables Healthy</span
+                  >Chinese
+                  <span class="text-[#808080] text-[14px] font-Poppins"
+                    >Cabbage</span
+                  ><span class="text-[#808080] text-[14px] font-Poppins"
+                    >Cabbage</span
+                  >
+                </p>
+              </div>
+              
+            </div>
+            <div>
+              <img src="./img/Image (20).png" alt="" />
+              <div
+                class="flex gap-[20px] w-[537px] h-[100px] border-1 border-[#e5e5e5] rounded-[10px] mt-[30px] justify-center items-center"
+              >
+                <div class="flex gap-[10px] justify-center items-center">
+                  <img src="./img/price-tag 1.svg" alt="" />
+                  <div class="flex flex-col">
+                    <h1 class="text-[#1A1A1A] text-[14px] font-Poppins">
+                      64% Discount
+                    </h1>
+                    <p class="text-[13px] text-[#808080] font-Poppins">
+                      Save your 64% money with us
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-[10px] justify-center items-center">
+                  <img src="./img/leaf 1.svg" alt="" />
+                  <div class="flex flex-col">
+                    <h1 class="text-[#1A1A1A] text-[14px] font-Poppins">
+                      100% Organic
+                    </h1>
+                    <p class="text-[13px] text-[#808080] font-Poppins">
+                      100% Organic Vegetables
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section >
+      <section id="dele3" class="mt-[100px] hidden">
+        <div class="max-w-[1200px] mx-auto">
+      <div class="flex justify-between border-b border-[#e5e5e5] pb-[20px]">
+            <div>
+            <div class="flex gap-[10px]">
+              <img class="w-[40px] h-[40px]" src="./img/krs.png" alt="">
+              <div>
+                <p class="text-[14px] text-[#1A1A1A] font-[Poppins]">Kristin Watson</p>
+                <span class="text-[#FF8A00]">★★★★★</span>
+              </div>
+            </div>
+            <p class="text-[14px] text-[#808080] font-Poppins mt-[10px]">Duis at ullamcorper nulla, eu dictum eros.</p>
+          </div>
+          <div>
+            <p class="text-[14px] text-[#999999] font-Poppins">2 min ago</p>
+          </div>
+      </div>
+       <div class="flex justify-between border-b border-[#e5e5e5] pb-[20px]">
+            <div>
+            <div class="flex gap-[10px]">
+              <img class="w-[40px] h-[40px]" src="./img/krs.png" alt="">
+              <div>
+                <p class="text-[14px] text-[#1A1A1A] font-[Poppins]">Jane Cooper</p>
+                <span class="text-[#FF8A00]">★★★★★</span>
+              </div>
+            </div>
+            <p class="text-[14px] text-[#808080] font-Poppins mt-[10px] max-w-[960px]">Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to "bolt" or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.</p>
+          </div>
+          <div>
+            <p class="text-[14px] text-[#999999] font-Poppins">30 Apr, 2021</p>
+          </div>
+      </div>
+       <div class="flex justify-between border-b border-[#e5e5e5] pb-[20px]">
+            <div>
+            <div class="flex gap-[10px]">
+              <img class="w-[40px] h-[40px]" src="./img/krs.png" alt="">
+              <div>
+                <p class="text-[14px] text-[#1A1A1A] font-[Poppins]">Jacob Jones</p>
+                <span class="text-[#FF8A00]">★★★★★</span>
+              </div>
+            </div>
+            <p class="text-[14px] text-[#808080] font-Poppins mt-[10px] "> Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia lacus.</p>
+          </div>
+          <div>
+            <p class="text-[14px] text-[#999999] font-Poppins">2 min ago</p>
+          </div>
+      </div>
+       <div class="flex justify-between border-b border-[#e5e5e5] pb-[20px]">
+            <div>
+            <div class="flex gap-[10px]">
+              <img class="w-[40px] h-[40px]" src="./img/krs.png" alt="">
+              <div>
+                <p class="text-[14px] text-[#1A1A1A] font-[Poppins]">Ralph Edwards</p>
+                <span class="text-[#FF8A00]">★★★★★</span>
+              </div>
+            </div>
+            <p class="text-[14px] text-[#808080] font-Poppins mt-[10px] max-w-[960px]">200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom Non-GMO Productive Brassica rapa VAR. chinensis, a.k.a. Canton's Choice, Bok Choi, from USA
+</p>
+          </div>
+          <div>
+            <p class="text-[14px] text-[#999999] font-Poppins">2 min ago</p>
+          </div>
+      </div>
+        </div>
+      </section>
+      <section class="mt-[100px]">
+        <div class="max-w-[1200px] mx-auto flex justify-between gap-[5px]">
+           <a href="./detail.html">
+              <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+              <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px]"
+              >
+                Sale 50%
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Product Image.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Green Apple
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$14.99
+                    <del class="text-[#999999] text-[15px] font-Poppins"
+                      >$20.99</del
+                    ></span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+        </a>
+         <a href="./detail.html">
+             <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+           
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/malto.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Fresh Indian Malta
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$20.00
+                   </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+         </a>
+         <a href="./detail.html">
+             <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+              <button
+                class="ml-[5px] absolute w-[80px] h-[25px] bg-[#EA4B48] text-white text-[ 12px] rounded-[4px] "
+              >
+                Sale 50%
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Chinese cabbage.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Chinese cabbage
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$12.00</span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+         </a>
+         
+         <a href="./detail.html">
+             <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+              
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Green Lettuce.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                    Green Lettuce
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$9.00
+                    </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+         </a>
+           
+         <a href="./detail.html">
+           <div
+              class="group w-[240px] h-[300px] border-[1px] border-[#e5e5e5] hover:border-[#00B207] transition p-[5px] cursor-pointer flex flex-col justify-between py-[10px] px-[10px] relative"
+            >
+             
+              </button>
+              <div
+                class="absolute top-[10px] right-[10px] flex gap-[10px] flex-col hidden group-hover:block"
+              >
+                <img class="w-[30px]" src="./imgs/Add To wishlist.svg" alt="" />
+                <img class="w-[30px]" src="./imgs/Quick View.svg" alt="" />
+              </div>
+              <div>
+                <img src="./imgs/Eggplant.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="">
+                  <p class="text-[#4D4D4D] text-[14px font-Poppins] group-hover:text-[#00B207]">
+                   Eggplant
+                  </p>
+                  <span class="text-[#1A1A1A] text-[15px] font-Poppins"
+                    >$34.00
+                  </span
+                  >
+                  <img src="/imgs/Rating.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./imgs/Add To Cart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+         </a>
+
+        </div>
+      </section>
+      <section class="mt-[50px] bg-[#F7F7F7] py-[50px]">
+        <div class="max-w-[1200px] mx-auto">
+           <div class="flex justify-between items-center">
+            <div>
+              <h1 class="text-[#1A1A1A] text-[24px] font-Poppins">Subcribe our Newsletter</h1>
+              <p class="max-w-[448px] text-[14px] text-[#999999] font-Poppins mt-[10px]">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+            </div>
+           <div>
+  <input 
+    class="text-[#808080] text-[16px] font-Poppins w-[490px] h-[52px] px-[20px] bg-white rounded-[30px] 
+           focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-gray-400"  
+    type="text" 
+    placeholder="Your email address" 
+  >
+  <button 
+    class="text-[#FFFFFF] text-[16px] bg-[#00B207] font-Poppins rounded-[30px] w-[160px] h-[52px] ml-[-160px] 
+           hover:border hover:border-[#00B207] cursor-pointer">
+    Subscribe
+  </button>
+</div>
+<div class="flex gap-[10px]">
+  <img src="./imgs/Social Media.png" alt="">
+  <img src="./imgs/Social Media (1).png" alt="">
+  <img src="./imgs/Social Media (2).png" alt="">
+  <img src="./imgs/Social Media (3).png" alt="">
+</div>
+
+           </div>
+        </div>
+      </section>
+    </main>
+     <footer class=" bg-[#1A1A1A] py-[50px]">
+          <div class="max-w-[1200px] mx-auto">
+            <div class="flex justify-between mt-[30px] items-center border-b-[1px] border-[#808080] pb-[50px]">
+              <div class="flex flex-col gap-[25px]">
+                 <img class="w-[250px]" src="./imgs/foter logo.svg" alt="">
+                 <p class="max-w-[336px] text-[#808080] text-[14px] font-Poppins">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+                 <div class="flex gap-[10px] juftify-center items-center">
+                  <p class="text-[#FFFFFF] text-[14px] font-Poppins">(219) 555-0114</p>
+                  <span class="text-[#808080] text-[16px] font-Poppins">or</span>
+                  <p class="text-[#FFFFFF] text-[14px] font-Poppins">Proxy@gmail.com</p>
+                 </div>
+              </div>
+              <div class="flex flex-col gap-[20px]">
+                <p class="text-[16px] text-[#FFFFFF] font-Poppins">My Account</p>
+                <div class="flex flex-col gap-[15px]">
+                  <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">My Account</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">Order History</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">Shoping Cart</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]" href="">Wishlist</a>
+                </div>
+              </div>
+                <div class="flex flex-col gap-[20px]">
+                <p class="text-[16px] text-[#FFFFFF] font-Poppins">Helps</p>
+                <div class="flex flex-col gap-[15px]">
+                  <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">Contact</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">Faqs</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">Terms & Condition</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]" href="">Privacy Policy</a>
+                </div>
+              </div>  <div class="flex flex-col gap-[20px]">
+                <p class="text-[16px] text-[#FFFFFF] font-Poppins">Proxy</p>
+                <div class="flex flex-col gap-[15px]">
+                  <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">About</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">Shop</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">Product</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]" href="">Track Order</a>
+                </div>
+              </div>  <div class="flex flex-col gap-[20px]">
+                <p class="text-[16px] text-[#FFFFFF] font-Poppins">Categories</p>
+                <div class="flex flex-col gap-[15px]">
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">Fruit & Vegetables</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]"  href="">Meat & Fish</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]" href="">Bread & Bakery</a>
+                <a class="text-[#999999] tex-[14px] font-Poppins hover:text-[#FFFFFF]" href="">Beauty & Health</a>
+
+                </div>
+              </div>
+             
+            </div>
+            <div class="flex justify-between items-center mt-[30px]">
+<div>
+  <p class="text-[#808080] text-[14px] font-Poppins">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+</div>
+<div>
+  <img src="./imgs/fot.svg" alt="">
+</div>
+            </div>
+          </div>
+      </footer>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
