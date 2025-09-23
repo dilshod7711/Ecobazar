@@ -7,6 +7,17 @@
     <link rel="icon" type="image/png" href="./imgs/eco.svg" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script>
+      tailwind.config = 
+      { theme:
+         { screens:{
+  xs: "360px",  
+  md: "768px", 
+  lg: "1200px", 
+} }
+            , 
+          };
+    </script>
     <style>
       @font-face {
         font-family: "Poppins";
@@ -20,13 +31,13 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="lg:px-[10px] md:px-[20px] xs:px-[20px]">
       <div class="border-b border-[#e5e5e5]">
         <div
           class="max-w-[1200px] mx-auto flex justify-between items-center py-2"
         >
           <div>
-            <p class="text-[12px] text-[#666666] font-Poppins">
+            <p class="text-[12px] text-[#666666] font-Poppins ">
               📍 Store Location: Lincoln-344, Illinois, Chicago, USA
             </p>
           </div>
@@ -146,61 +157,61 @@
         >
           <div class="flex gap-[20px]">
             <select
-              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              class="text-[#999999] text-[14px] font-Poppins "
               name=""
               id=""
             >
               <option
-                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                class="text-[#999999] text-[14px] font-Poppins "
                 value="Home"
               >
                 Home
               </option>
             </select>
             <select
-              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              class="text-[#999999] text-[14px] font-Poppins "
               name=""
               id=""
             >
               <option
-                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                class="text-[#999999] text-[14px] font-Poppins "
                 value="Shop"
               >
                 Shop
               </option>
             </select>
             <select
-              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              class="text-[#999999] text-[14px] font-Poppins "
               name=""
               id=""
             >
               <option
-                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                class="text-[#999999] text-[14px] font-Poppins "
                 value="Pages"
               >
                 Pages
               </option>
             </select>
             <select
-              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+              class="text-[#999999] text-[14px] font-Poppins "
               name=""
               id=""
             >
               <option
-                class="text-[#999999] text-[14px] font-Poppins hover:text-white"
+                class="text-[#999999] text-[14px] font-Poppins "
                 value="Blog"
               >
                 Blog
               </option>
             </select>
             <a
-              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
-              href="About Us"
+              class="text-[#999999] text-[14px] font-Poppins "
+              href="./notfound.html"
               >About Us</a
             >
             <a
-              class="text-[#999999] text-[14px] font-Poppins hover:text-white"
-              href="Contact Us"
+              class="text-[#999999] text-[14px] font-Poppins "
+              href="./notfound.html"
               >Contact Us</a
             >
           </div>
