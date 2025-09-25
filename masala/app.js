@@ -35,14 +35,15 @@ class Rectangle extends Shape {
   }
 }
 
-// 2-misol
-
 let res1 = new Circle(5);
 let res2 = new Square(3);
 let res3 = new Rectangle(7, 11);
 res3.getArea3();
 res2.getArea2();
 res1.getArea1();
+
+
+// 2-misol
 
 class Student {
   constructor(id, name, grades) {
