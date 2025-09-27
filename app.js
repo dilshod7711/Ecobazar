@@ -17,6 +17,7 @@ const d1 = document.getElementById("d1");
 const d2 = document.getElementById("d2");
 const d3 = document.getElementById("d3");
 
+
 d1.addEventListener("click", () => {
   dele1.classList.remove("hidden");
   dele2.classList.add("hidden");
@@ -74,8 +75,33 @@ function decrement() {
 }
 
 function updateUI() {
-  countText.textContent = num;
+  countText.innerHTML = num;
 }
 
 plus.addEventListener("click", increment);
 minus.addEventListener("click", decrement);
+
+
+const cartMinus = document.getElementById("cartMinus");
+const cartPlus = document.getElementById("cartPlus");
+const cartCount = document.getElementById("cartCount");
+let sum = 0;
+
+function incrementC() {
+  sum++;
+  updateCartUI();
+}
+function decrementC() {
+  sum--;
+  if (sum < 0) {
+    sum = 0;
+  }
+  updateCartUI();
+}
+
+function updateCartUI() {
+  cartCount.textContent = sum;
+}
+
+cartPlus.addEventListener("click", incrementC);
+cartMinus.addEventListener("click", decrementC);

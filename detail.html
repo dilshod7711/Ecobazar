@@ -119,6 +119,7 @@
       </div>
       <div class="lg:max-w-[1200px]  lg:mx-auto md:mx-0 lg:px-0 md:px-[20px] p-[20px] md:max-w-[800px] max-w-[400px]  ">
        <div class="flex lg:justify-between mt-[10px] md:justify-between justify-between items-center">
+      <div class="flex justify-between  mt-[10px] md:justify-between justify-between items-center">
          <div>
           <a href="./index.html" ><img class="lg:w-[200px] md:w-[150px] w-[100px]" src="./imgs/Logo (2).svg" alt="" /></a>
         </div>
@@ -136,11 +137,11 @@
         </div>
         <div class="flex gap-[15px] justify-center items-center hidden lg:flex ">
           <div>
-            <img class="w-[32px] h-[32px]" src="./imgs/Heart.svg" alt="" />
+            <a href="./MyWishlist.html"><img class="w-[32px] h-[32px]" src="./imgs/Heart.svg" alt="" /></a>
           </div>
           <p class="text-[#CCCCCC] text-[20px]">|</p>
           <div class="flex gap-[10px]">
-            <img src="./imgs/Cart.svg" alt="" />
+            <img id="cart" class="cursor-pointer" src="./imgs/Cart.svg" alt="" />
             <div class="flex flex-col">
               <p class="text-[#4D4D4D] text-[11px] font-Poppins">
                 Shopping cart:
@@ -149,9 +150,13 @@
             </div>
           </div>
         </div>
-        <div class="lg:hidden md:flex flex ">
-          <img class="lg:w-[32px] lg:h-[32px] md:w-[28px] md:h-[28px] w-[24px] h-[24px]" src="./img/burger.png" alt="">
-        </div>
+        <div class="lg:hidden md:flex absolute top-4 right-6">
+  <img id="burger" 
+       class="lg:w-[32px] lg:h-[32px] md:w-[28px] md:h-[28px] w-[24px] h-[24px]" 
+       src="./img/burger.png" 
+       alt="Menu">
+</div>
+
        </div>
       </div>
       <nav class="bg-[#333333] mt-[20px] ">
